@@ -1,0 +1,63 @@
+[25-Jun-2019 22:43:43 PRC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: request in G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\di\ServiceLocator.php:155
+Stack trace:
+#0 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('request', true)
+#1 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\web\Application.php(160): yii\base\Module->get('request')
+#2 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\base\Component.php(139): yii\web\Application->getRequest()
+#3 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\di\ServiceLocator.php(85): yii\base\Component->__get('request')
+#4 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\web\ErrorHandler.php(502): yii\di\ServiceLocator->__get('request')
+#5 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\web\ErrorHandler.php(115): yii\web\ErrorHandler->shouldRenderSimpleHtml()
+#6 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownPropertyException))
+#7 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#8 {main}
+Previous exception:
+yii\base\UnknownPropertyException: Setting unknown property: yii\web\Application::defaultController in G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\Component->__set('defaultControll...', 'index')
+#1 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\web\Application), Array)
+#2 G:\phpStudy\WWW\hehe\basic-blog\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#3 G:\phpStudy\WWW\hehe\basic-blog\web\index.php(12): yii\base\Application->__construct(Array)
+#4 {main}
+$_SERVER = [
+    'PATH' => 'D:\\xshell6\\;G:\\Python\\Anaconda3;G:\\Python\\Anaconda3\\Library\\mingw-w64\\bin;G:\\Python\\Anaconda3\\Library\\usr\\bin;G:\\Python\\Anaconda3\\Library\\bin;G:\\Python\\Anaconda3\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;d:\\Git\\cmd;G:\\phpStudy\\php\\php-7.0.12-nts;C:\\ProgramData\\ComposerSetup\\bin;D:\\nodejs-pack\\;G:\\Python\\Python37\\Scripts\\;G:\\Python\\Python37\\;C:\\Program Files (x86)\\Common Files\\Thunder Network\\KanKan\\Codecs;G:\\Python\\Python37\\Scripts\\;G:\\Python\\Python37\\;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm;D:\\VS Code\\bin',
+    'SYSTEMROOT' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'PHP_FCGI_MAX_REQUESTS' => '1200',
+    'PHPRC' => 'G:/phpStudy/php/php-7.0.12-nts/',
+    '_FCGI_SHUTDOWN_EVENT_' => '1864',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '51071',
+    'SCRIPT_FILENAME' => 'G:/phpStudy/WWW/hehe/basic-blog/web/index.php',
+    'SERVER_ADMIN' => 'admin@phpStudy.net',
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/phpStudy/WWW/hehe/basic-blog/web',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => 'G:/phpStudy/WWW/hehe/basic-blog/web',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'SERVER_NAME' => 'btest.com',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+    'SERVER_SIGNATURE' => '',
+    'SystemRoot' => 'C:\\Windows',
+    'HTTP_COOKIE' => 'PHPSESSID=bg34n5pm3fjr4e2ihobjojktc1; _csrf=caaa5ceb8be1e6c8dd826100a5c27c132022528fad6c1b520dce0b2c8124953ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22QveZA7je5XmGgJsXyQBMgpvcjoLurn9X%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'btest.com',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1561473823.3111091,
+    'REQUEST_TIME' => 1561473823,
+]
